@@ -1,0 +1,9 @@
+{{#each todos }}
+<div class="todo">
+    {{content}}
+    <div class="button-grid">
+        <a href="todo/delete/{{_id}}" class="button remove"><i class="fa fa-trash"></i></a>
+        <a href="todo/edit/{{_id}}" class="button edit"><i class="fa fa-pencil"></i></a>
+    </div>
+</div>
+{{/each}}

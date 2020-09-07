@@ -1,0 +1,96 @@
+*,
+::before,
+::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: linear-gradient(to right, #00d2ff, #928dab);
+}
+
+.container {
+  height: 70vh;
+  width: 50vw;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  margin: 9px;
+  padding: 9px;
+  font-size: 2.5rem;
+}
+
+.form {
+  margin: 18px;
+}
+
+.form input {
+  padding: 18px;
+  margin: 9px;
+  border-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: transparent;
+  outline: none;
+  width: 40vw;
+  font-size: 1.4rem;
+}
+
+.form button {
+  padding: 18px;
+  margin: 9px;
+  border-radius: 9px;
+  background-color: rgb(140, 217, 243);
+  border: transparent;
+  outline: none;
+  width: 5vw;
+  font-size: 1.2rem;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  margin: 9px;
+  padding: 9px;
+  width: 90%;
+  border-radius: 9px;
+  font-size: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.button {
+  background-color: transparent;
+  border: transparent;
+  padding: 9px;
+  font-size: 1.4rem;
+  outline: none;
+  color: var(--color);
+}
+
+.remove {
+  --color: rgba(255, 0, 0, 0.7);
+}
+
+.remove:hover {
+  --color: red;
+}
+
+.edit {
+  --color: rgb(60, 197, 243);
+}
+
+.edit:hover {
+  --color: rgb(13, 107, 231);
+}

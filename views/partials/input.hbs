@@ -1,0 +1,16 @@
+{{#if inputValue}}
+
+<form action="/todo/update/{{todoID}}" method="post" autocomplete="off" class="form">
+    <input type="text" name="content" value="{{inputValue}}">
+    <button type="submit">EDIT</button>
+</form>
+
+{{else}}
+
+<form action="/todo/add" method="post" autocomplete="off" class="form">
+    <input type="text" name="content" value="{{inputValue}}">
+    <button type="submit">ADD</button>
+</form>
+
+
+{{/if}}
