@@ -67,7 +67,10 @@ body {
   width: 90%;
   border-radius: 9px;
   font-size: 1.8rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
   background-color: rgba(255, 255, 255, 0.6);
+  overflow-wrap: break-word;
 }
 
 .button {
@@ -93,4 +96,9 @@ body {
 
 .edit:hover {
   --color: rgb(13, 107, 231);
+}
+
+.button-grid {
+  display: flex;
+  flex-direction: row;
 }
